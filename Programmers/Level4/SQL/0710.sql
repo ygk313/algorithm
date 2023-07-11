@@ -1,0 +1,9 @@
+-- Programmers Lv 4. 5월 식품들의 총매출 구하기
+-- https://school.programmers.co.kr/learn/courses/30/lessons/131117
+-- 총 매출은 총 개수 * 가격 이다.
+
+SELECT A.PRODUCT_ID, A.PRODUCT_NAME, SUM(A.PRICE * B.AMOUNT) AS TOTAL_SALES
+FROM FOOD_PRODUCT A JOIN FOOD_ORDER B ON A.PRODUCT_ID = B.PRODUCT_ID
+WHERE DATE_FORMAT(B.PRODUCE_DATE, '%Y-%m')='2022-05'
+GROUP BY A.PRODUCT_ID
+ORDER BY TOTAL_SALES DESC, A.PRODUCT_ID ASC;
