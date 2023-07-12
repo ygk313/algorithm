@@ -12,5 +12,6 @@
 
 
 ## ☑️ 백준
-시뮬레이션 구현 연습을 위해 https://www.acmicpc.net/workbook/view/7316 해당 링크의 문제를 풀고 있습니다.
+시뮬레이션 구현 연습을 위해 [바킹독-시뮬레이션](https://www.acmicpc.net/workbook/view/7316)의 문제를 풀고 있습니다.
+
 * [Baekjoon-Simulation](https://github.com/ygk313/algorithm/tree/main/Baekjoon/Simulation)
