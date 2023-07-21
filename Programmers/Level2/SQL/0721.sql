@@ -1,0 +1,15 @@
+-- Programmers Lv 2. 조건에 부합하는 중고거래 상태 조회하기
+-- https://school.programmers.co.kr/learn/courses/30/lessons/164672
+-- CASE WHEN THEN END를 사용해 경우 분기.
+
+SELECT BOARD_ID, WRITER_ID, TITLE, PRICE, CASE
+                                            WHEN STATUS = 'DONE'
+                                            THEN "거래완료"
+                                            WHEN STATUS = 'RESERVED'
+                                            THEN "예약중"
+                                            WHEN STATUS = 'SALE'
+                                            THEN "판매중"
+                                        END AS STATUS
+FROM USED_GOODS_BOARD
+WHERE CREATED_DATE = '2022-10-05'
+ORDER BY BOARD_ID DESC;
